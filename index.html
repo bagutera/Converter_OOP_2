@@ -1,0 +1,42 @@
+<!--https://validator.w3.org "Document checked, no errors or warnings"-->
+<!doctype html>
+<html lang="en">
+	<head> 
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   		<title>Converter</title>
+
+		<link type="text/css" rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+		
+		<form action="changeCase.php" method="post"><br>
+			<a href="https://github.com/bagutera">
+				My portfolio on GitHub
+			</a>
+			<p>		 
+				Convert:<input type="text" placeholder="Type something" name="inputInform" required="required" value="">
+				<select name="convertTypes" id="capForm">
+					<option value="firstCapt" selected> First capital </option>  
+					<option value="lowerCase"> Lowercase </option>
+					<option value="uppercase"> Uppercase </option>
+				</select>
+				<input type="submit" name="sendValue" value="Send"><br><br>
+			
+				<a href="https://github.com/bagutera/Converter_OOP">
+					This Converter source code You can see on GitHub
+				</a>
+			</p>				 
+		</form>
+		
+		<div id="footer">
+			<small>
+				&copy; 2012, Jevgeni Boikov<br>
+				All trademarks and registered trademarks appearing on this site are 
+				the property of their respective owners.
+			</small>
+		</div>
+	</body>
+</html>

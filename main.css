@@ -1,0 +1,15 @@
+body{
+	font-family:sans-serif;
+	font-size:normal;
+	background:url("office1.jpg") center no-repeat;
+	
+	margin-top: 450px;
+	text-align:center;
+}
+
+#footer{
+    font-size: 75%;
+    line-height: medium;
+    margin-top: 370px;
+}
+

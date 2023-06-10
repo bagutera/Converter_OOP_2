@@ -1,19 +1,35 @@
 <?php 
-class LowerCase extends ChangeCaseBase
+class LowerCase implements ChangeCase
 {
-    public function convert()
-    {
-        if ($this->convertTypes == "lowerCase") {
-            $strConvert = strtolower($this->inputInform); // Convert all characters to lowercase
-            return $strConvert;
-        }
-        return null;
-    }
-}
-
-$case2 = new LowerCase();
-$convertedString2 = $case2->convert();
-if ($convertedString2 !== null) {
-    $case2->displayResult($convertedString2);
+	public function lowerCase($inputInform,$convertTypes)
+	{
+		if ($convertTypes == "lowerCase")
+		{	 
+			$strConvert2 = strtolower($inputInform);//Convert all characters to lowercase
+			echo $strConvert2."<br>";
+			
+			$strSum2 = (str_word_count($inputInform));
+			if ($strSum2 == 1)
+			{
+				echo "In a sentence ".$strSum2." word and ";
+			}
+			else
+			{
+				echo "In a sentence ".$strSum2." words and ";
+			}
+				
+			$symbSum2 = (iconv_strlen($inputInform));
+			if ($symbSum2 == 1)
+			{
+				echo $symbSum2." symbol."."<br>";
+			}
+			else
+			{
+				echo $symbSum2." symbols."."<br>";
+			}
+				
+			return $strConvert2;
+		}
+	}
 }
 ?>
